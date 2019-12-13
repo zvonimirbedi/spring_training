@@ -1,0 +1,5 @@
+package com.zvone.spring.config;
+
+public class Configuration {
+
+}

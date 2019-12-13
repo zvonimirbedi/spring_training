@@ -1,0 +1,20 @@
+<html>
+<head>
+
+</head>
+<body>
+<h3>
+Spring - REST - Zvone - Demo
+</h3>
+<hr/>
+
+<a href="${pageContext.request.contextPath}/test/hello">Test REST Hello World</a>
+<br/>
+<a href="${pageContext.request.contextPath}/api/student">Test REST Hello World</a>
+<br/>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+package com.zvone.springboot.zvonecrudapp.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface InterfaceJpaRepositoryEmployee extends JpaRepository<EntitiyEmployee, Integer> {
+
+}

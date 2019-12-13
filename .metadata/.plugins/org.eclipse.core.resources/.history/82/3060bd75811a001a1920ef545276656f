@@ -1,0 +1,8 @@
+package com.zvone.spring.entity;
+
+public class PojoStudent {
+
+	private String firstName;
+	private String lastName;
+
+}

@@ -1,0 +1,5 @@
+package com.zvone.springboot.zvonecrudapp;
+
+public interface InterfaceDAOEmployee {
+
+}

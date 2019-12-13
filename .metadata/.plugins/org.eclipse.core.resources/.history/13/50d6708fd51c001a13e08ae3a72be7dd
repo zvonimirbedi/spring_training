@@ -1,0 +1,53 @@
+package com.zvone.springboot.zvonecrudapp.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
+
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+@Repository
+public class ImplementationDAOJpa implements InterfaceDAOEmployee {
+
+
+	// fields 
+	private EntityManager entityManager;
+	
+	public ImplementationDAOJpa(EntityManager theEntityManager) {
+		entityManager = theEntityManager;
+	}
+
+	@Override
+	public List<EntityEmployee> findAll() {
+		
+		// create a query
+		Query theQuery = entityManager.createQuery("from EntityEmployee");	
+		// exec a query
+		List<EntityEmployee> employees = theQuery.getResultList();
+		
+		// return result
+		return employees;
+	}
+
+	@Override
+	public EntityEmployee findById(int theId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void saveOrUpdate(EntityEmployee theEmployee) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteById(int theId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

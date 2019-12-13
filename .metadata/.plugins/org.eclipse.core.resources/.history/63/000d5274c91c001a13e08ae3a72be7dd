@@ -1,0 +1,52 @@
+package com.zvone.springboot.zvonecrudapp.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.zvone.springboot.zvonecrudapp.dao.InterfaceDAOEmployee;
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+@Service
+public class ImplementationServiceEmployee implements InterfaceServiceEmployee {
+
+	
+	private InterfaceDAOEmployee employeDAO;
+	
+	@Autowired
+	public ImplementationServiceEmployee(InterfaceDAOEmployee theEmployeDAO) {
+		employeDAO = theEmployeDAO;
+	}
+		
+	
+	@Override
+	@Transactional
+	public List<EntityEmployee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	@Transactional
+	public EntityEmployee findById(int theId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	@Transactional
+	public void Save(EntityEmployee theEmployee) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	@Transactional
+	public void deleteById(int theId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

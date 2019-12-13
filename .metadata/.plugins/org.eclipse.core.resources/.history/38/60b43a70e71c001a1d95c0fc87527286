@@ -1,0 +1,11 @@
+# JDBC propertiesDB connection
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_directory?useSSL=false&serverTimezone=UTC
+spring.datasource.username=springstudent
+spring.datasource.password=springstudent
+
+
+#a spring Data Rest properties
+spring.data.rest.base-path=/api
+spring.data.rest..default-page-size=3

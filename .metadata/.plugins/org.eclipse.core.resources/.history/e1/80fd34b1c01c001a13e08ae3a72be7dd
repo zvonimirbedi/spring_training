@@ -1,0 +1,11 @@
+package com.zvone.springboot.zvonecrudapp.dao;
+
+import java.util.List;
+
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+public interface InterfaceDAOEmployee {
+	public List<EntityEmployee> findAll();
+	
+	
+}

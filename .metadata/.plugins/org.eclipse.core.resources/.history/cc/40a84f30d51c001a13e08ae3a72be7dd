@@ -1,0 +1,33 @@
+package com.zvone.springboot.zvonecrudapp.dao;
+
+import java.util.List;
+
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+public class ImplementationDAOJpa implements InterfaceDAOEmployee {
+
+	@Override
+	public List<EntityEmployee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EntityEmployee findById(int theId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void saveOrUpdate(EntityEmployee theEmployee) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteById(int theId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

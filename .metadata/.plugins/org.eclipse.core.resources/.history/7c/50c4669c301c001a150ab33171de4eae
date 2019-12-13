@@ -1,0 +1,42 @@
+package com.zvone.springboot.zvonecrudapp.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+
+@Repository
+public class ImplementationDAOHibernateEmployee implements InterfaceDAOEmployee {
+	
+	// fields 
+	private EntityManager entityManager;	
+	
+	// constructor injection
+	@Autowired
+	public ImplementationDAOHibernateEmployee(EntityManager theEntityManager)
+	{
+		entityManager = theEntityManager;
+		
+	}
+
+	@Override
+	@Transactional
+	public List<EntityEmployee> findAll() {
+
+		// current hibernate session
+		
+		//create query
+		
+		// execute the query
+		
+		//return the results
+		return null;
+	}
+
+}

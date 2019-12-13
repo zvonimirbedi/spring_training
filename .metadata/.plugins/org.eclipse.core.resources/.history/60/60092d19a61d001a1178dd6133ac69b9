@@ -1,0 +1,35 @@
+package com.zvone.springboot.thymeleafapp.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.zvone.springboot.thymeleafapp.entity.EntityEmployee;
+
+
+@Controller
+@RequestMapping("/employees")
+public class ControllerEmployee {
+	
+	private InterfaceServiceEmployee employeeService;
+	
+	
+	
+	
+	
+
+	//add mapping for "/list"
+	@GetMapping("/list")
+	public String getListEmployees(Model theModel) {
+		theModel.addAttribute("entityEmployees", "");		
+		return "list-employees";
+	}
+
+
+}

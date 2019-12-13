@@ -1,0 +1,19 @@
+package com.luv2code.springdemo.rest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class ExceptionHandlerRestCustomer {
+
+	// Add an exception handler for ExceptionNotFoundCustomer
+	@ExceptionHandler
+	public ResponseEntity<ErrorResponseCustomer> handleException(ExceptionNotFoundCustomer exc){
+		
+		return bull;
+	}
+	
+	// Add another exception handler for any other error
+	
+}

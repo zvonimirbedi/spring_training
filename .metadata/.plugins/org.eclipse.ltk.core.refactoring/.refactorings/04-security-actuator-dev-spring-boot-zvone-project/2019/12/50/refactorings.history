@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.zvone.springboot.app.SpringBootApp.SpringBootAppApplication&apos; to &apos;MainZvone&apos;&#x0D;&#x0A;- Original project: &apos;SpringBootApp&apos;&#x0D;&#x0A;- Original element: &apos;com.zvone.springboot.app.SpringBootApp.SpringBootAppApplication&apos;&#x0D;&#x0A;- Renamed element: &apos;com.zvone.springboot.app.SpringBootApp.MainZvone&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SpringBootAppApplication&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.zvone.springboot.app.SpringBootApp{SpringBootAppApplication.java[SpringBootAppApplication" matchStrategy="1" name="MainZvone" qualified="false" references="true" similarDeclarations="false" stamp="1576061525060" textual="false" version="1.0"/>
+</session>

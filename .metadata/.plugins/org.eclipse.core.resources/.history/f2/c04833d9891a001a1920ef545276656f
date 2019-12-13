@@ -1,0 +1,15 @@
+package com.zvone.spring.rest;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ErrorRestStudentResponse {
+	
+	private int status;
+	private String message;
+	private long timestamp;
+	
+	
+	
+	
+}

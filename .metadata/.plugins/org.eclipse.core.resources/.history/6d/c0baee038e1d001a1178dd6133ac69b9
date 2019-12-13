@@ -1,0 +1,7 @@
+package com.zvone.springboot.thymeleafapp.model;
+
+public class EntityEmployee {
+
+	private int id;
+	private String firstName;
+}

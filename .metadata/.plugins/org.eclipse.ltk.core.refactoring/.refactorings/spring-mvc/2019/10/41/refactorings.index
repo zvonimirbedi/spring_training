@@ -1,0 +1,13 @@
+1570622751471	Delete element
+1570622867596	Rename type 'HomeController'
+1570624124691	Delete element
+1570626919385	Rename resource 'css.css'
+1570627436575	Move 'resources' to 'META-INF'
+1570627458125	Move 'resources' to 'WebContent'
+1570693048341	Rename type 'ControllerLogin'
+1570693130197	Rename type 'ControllerUserBean'
+1570695438033	Rename resource 'LoginUser.jsp'
+1570704240819	Copy file
+1570704247803	Delete element
+1570704429446	Rename resource 'countrieList.properties'
+1570717497161	Rename resource 'customerForm.jsp'

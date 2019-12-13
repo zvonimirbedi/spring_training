@@ -1,0 +1,5 @@
+package com.zvone.spring.rest;
+
+public class ControllerRest {
+
+}

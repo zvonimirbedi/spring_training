@@ -1,0 +1,10 @@
+package com.zvone.spring.rest;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class ControllerAdviceExceptionHandlerStudent {
+	
+	// add exceptionhandling code
+
+}

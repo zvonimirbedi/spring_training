@@ -1,0 +1,10 @@
+package com.zvone.jackson;
+
+public class pojoStudent {
+	
+	private int id;
+	private String firstName ; 
+	private String lastName ; 
+	private boolean active ;
+
+}

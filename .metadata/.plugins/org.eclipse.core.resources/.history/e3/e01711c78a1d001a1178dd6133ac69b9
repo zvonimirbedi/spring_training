@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+	<title>Thymeleaf Zvone App</title>
+</head>
+<body>
+<h3>Thymeleaf Zvone App</h3>
+<br/>
+<p th:text="'Time on the server is: ' + ${theDate}"/>
+
+
+</body>
+</html>

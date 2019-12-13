@@ -1,0 +1,34 @@
+package com.zvone.springboot.thymeleafapp.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.zvone.springboot.thymeleafapp.service.InterfaceServiceEmployee;
+
+
+@Controller
+@RequestMapping("/employees")
+public class ControllerEmployee {
+	
+	private InterfaceServiceEmployee employeeService;
+	
+	public ControllerEmployee(InterfaceServiceEmployee theEmployeeService) {
+		employeeService = theEmployeeService;
+	}
+
+
+
+
+
+
+	//add mapping for "/list"
+	@GetMapping("/list")
+	public String getListEmployees(Model theModel) {
+		theModel.addAttribute("entityEmployees", "");		
+		return "list-employees";
+	}
+
+
+}

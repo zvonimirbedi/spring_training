@@ -1,0 +1,8 @@
+package com.zvone.spring.rest;
+
+
+
+public class ExceptionStudentNotFound extends RuntimeException{
+
+	
+}

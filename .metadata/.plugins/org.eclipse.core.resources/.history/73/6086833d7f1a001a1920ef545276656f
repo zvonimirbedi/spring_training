@@ -1,0 +1,17 @@
+<html>
+<head>
+
+</head>
+<body>
+<h3>
+Spring - REST - Zvone - Demo
+</h3>
+<hr/>
+
+<a href="test/hello">Test REST Hello World</a>
+
+
+
+</body>
+
+</html>

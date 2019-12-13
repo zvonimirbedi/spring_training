@@ -1,0 +1,49 @@
+package com.zvone.springboot.thymeleafapp.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.zvone.springboot.thymeleafapp.entity.EntityEmployee;
+import com.zvone.springboot.zvonecrudapp.dao.InterfaceDAOEmployee;
+
+@Service
+public class ImplementationServiceEmployee implements InterfaceServiceEmployee {
+
+	
+	private InterfaceDAOEmployee employeDAO;
+	
+	@Autowired
+	public ImplementationServiceEmployee(@Qualifier ("implementationDAOJpa") InterfaceDAOEmployee theEmployeDAO) {
+		employeDAO = theEmployeDAO;
+	}
+		
+	
+	@Override
+	@Transactional
+	public List<EntityEmployee> findAll() {
+		return employeDAO.findAll();
+	}
+
+	@Override
+	@Transactional
+	public EntityEmployee findById(int theId) {
+		return employeDAO.findById(theId);
+	}
+
+	@Override
+	@Transactional
+	public void saveOrUpdate(EntityEmployee theEmployee) {
+		employeDAO.saveOrUpdate(theEmployee);
+	}
+
+	@Override
+	@Transactional
+	public void deleteById(int theId) {
+		employeDAO.deleteById(theId);
+	}
+
+}

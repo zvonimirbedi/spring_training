@@ -1,0 +1,29 @@
+package com.zvone.jackson;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class MainDriver {
+
+	public static void main(String[] args) {		
+		
+		try {
+			
+			//create object mapper
+			ObjectMapper theMapper = new ObjectMapper();
+			
+			
+			// read JSON file and map/convert to POJO
+			// data/sample-lite.json
+			PojoStudent theStudent = mapper.readValue(new File("data/sample-lite.json"), PojoStudent.class);
+			
+			
+			// print fields
+			
+			
+		}
+		catch(Exception exc)
+		{exc.printStackTrace();}
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.zvone.springboot.zvonecrudapp.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employee")
+public class EntityEmployee {
+	
+	private String firstName;
+	private String lastName;
+	private String email;
+	
+	
+
+}

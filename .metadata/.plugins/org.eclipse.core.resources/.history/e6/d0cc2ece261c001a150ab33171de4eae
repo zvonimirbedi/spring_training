@@ -1,0 +1,21 @@
+info.app.name= Zvone spring boot app
+info.app.description= test demo app
+info.app.version= 1.0.0
+
+# Use wildcards "*" to expose all endpinst
+# Can also expose individual endpoints with a comma - delimiter
+
+management.endpoints.web.exposure.include=*
+# Can also exclude individual endpoints with a comma - delimiter
+# management.endpoints.web.exposure.exclude=health, info
+
+#
+# Define custom properties
+#
+coach.name= Zoran
+team.name = Domasinec
+
+
+# Configure the spring boot server port
+
+server.port=7070

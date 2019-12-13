@@ -1,0 +1,15 @@
+package com.zvone.springboot.zvonecrudapp;
+
+import java.util.List;
+
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+public class ImplementationDAOHibernateEmployee implements InterfaceDAOEmployee {
+
+	@Override
+	public List<EntityEmployee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

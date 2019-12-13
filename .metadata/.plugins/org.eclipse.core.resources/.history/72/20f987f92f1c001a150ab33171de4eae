@@ -1,0 +1,28 @@
+package com.zvone.springboot.zvonecrudapp.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.zvone.springboot.zvonecrudapp.InterfaceDAOEmployee;
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+
+@Repository
+public class ImplementationDAOHibernateEmployee implements InterfaceDAOEmployee {
+	
+	// fields 
+	private EntityManaget theEntityManager;	
+	
+	// constructor injection
+	@Autowired
+	public ImplementationDAOHibernateEmployee
+
+	@Override
+	public List<EntityEmployee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

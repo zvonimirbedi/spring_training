@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.annotations.SportConfig&apos; to &apos;ConfigSport&apos;&#x0D;&#x0A;- Original project: &apos;spring-annotations&apos;&#x0D;&#x0A;- Original element: &apos;com.annotations.SportConfig&apos;&#x0D;&#x0A;- Renamed element: &apos;com.annotations.ConfigSport&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SportConfig&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.annotations{SportConfig.java[SportConfig" matchStrategy="1" name="ConfigSport" qualified="false" references="true" similarDeclarations="false" stamp="1570438497361" textual="false" version="1.0"/>
+</session>

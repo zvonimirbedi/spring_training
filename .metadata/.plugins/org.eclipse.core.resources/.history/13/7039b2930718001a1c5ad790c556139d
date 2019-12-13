@@ -1,0 +1,5 @@
+package com.zvone.jackson;
+
+public class pojoStudent {
+
+}

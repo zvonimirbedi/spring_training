@@ -1,0 +1,12 @@
+package com.zvone.jackson;
+
+public class PojoStudentAdress {
+	
+	
+	private String street;
+	private String  city;
+	private String state; 
+	private String zip; 
+	private String country; 
+
+}

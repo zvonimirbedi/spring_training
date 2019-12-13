@@ -1,0 +1,52 @@
+package com.zvone.springboot.zvonecrudapp.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.zvone.springboot.zvonecrudapp.dao.InterfaceJpaRepositoryEmployee;
+import com.zvone.springboot.zvonecrudapp.entity.EntityEmployee;
+
+@Service
+public class ImplementationServiceEmployee implements InterfaceServiceEmployee {
+
+	
+	private InterfaceJpaRepositoryEmployee employeeRepository;
+	
+	@Autowired
+	public ImplementationServiceEmployee( InterfaceJpaRepositoryEmployee theEmployeeRepository) {
+		employeeRepository = theEmployeeRepository;
+	}
+		
+	
+	@Override
+	public List<EntityEmployee> findAll() {
+		return employeeRepository.findAll();
+	}
+
+	@Override
+	public EntityEmployee findById(int theId) {
+		Optional<EntityEmployee> result = employeeRepository.findById(theId);
+		
+		EntityEmployee theEmployee = null;
+		if(result.isPresent()) {
+			theEmployee= result.get();
+		}
+		return result;
+	}
+
+	@Override
+	public void saveOrUpdate(EntityEmployee theEmployee) {
+		employeeRepository.save(theEmployee);
+	}
+
+	@Override
+	public void deleteById(int theId) {
+		employeeRepository.deleteById(theId);
+	}
+
+}
